@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { enhancePromptService } from "@/services/enhance-service.js";
-import { EnhancedPrompt } from "@/types/enhance-types.js";
+import { enhancePromptService } from "../services/enhance-service.js";
+import { EnhancedPrompt } from "../types/enhance-types.js";
 
 export const enhancePrompt = async (req: Request, res: Response) => {
   try {

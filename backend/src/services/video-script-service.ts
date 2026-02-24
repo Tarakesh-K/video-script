@@ -1,7 +1,7 @@
-import { env } from "@/config/env-validator.js";
-import { groq } from "@/config/groq-config.js";
-import { VideoScriptRequest } from "@/types/script-types.js";
-import { SYSTEM_PROMPTS } from "@/utils/prompts/prompts.js";
+import { env } from "../config/env-validator.js";
+import { groq } from "../config/groq-config.js";
+import { VideoScriptRequest } from "../types/script-types.js";
+import { SYSTEM_PROMPTS } from "../utils/prompts/prompts.js";
 
 export const generateVideoScriptService = async (data: VideoScriptRequest) => {
   const { initialEnhancedPrompt, userContent, extractedOptions } = data;

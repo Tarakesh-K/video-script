@@ -1,5 +1,5 @@
 import axios from "axios";
-import { env } from "@/config/env-validator.js";
+import { env } from "../config/env-validator.js";
 
 export const extractedOptions = async <T>(
   systemPrompt: string,

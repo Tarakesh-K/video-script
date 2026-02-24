@@ -1,4 +1,4 @@
-import { ExtractedOptions } from "@/types/extract-types.js";
+import { ExtractedOptions } from "../types/extract-types.js";
 
 export interface VideoScriptRequest {
   // The original "Hidden" AI version

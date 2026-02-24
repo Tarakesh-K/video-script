@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { extractedOptions } from "@/services/extract-service.js";
-import { ExtractedOptions } from "@/types/extract-types.js";
-import { SYSTEM_PROMPTS } from "@/utils/prompts/prompts.js";
+import { extractedOptions } from "../services/extract-service.js";
+import { ExtractedOptions } from "../types/extract-types.js";
+import { SYSTEM_PROMPTS } from "../utils/prompts/prompts.js";
 
 export const extractData = async (req: Request, res: Response) => {
   try {

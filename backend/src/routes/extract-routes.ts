@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { extractData } from "@/controllers/extract-controllers.js";
-import { requireKey } from "@/middleware/validate.js";
+import { extractData } from "../controllers/extract-controllers.js";
+import { requireKey } from "../middleware/validate.js";
 
 const router = Router();
 

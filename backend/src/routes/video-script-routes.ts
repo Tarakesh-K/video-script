@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { generateVideoScript } from "@/controllers/video-script-controllers.js";
-import { requireKeys } from "@/middleware/validate.js";
+import { generateVideoScript } from "../controllers/video-script-controllers.js";
+import { requireKeys } from "../middleware/validate.js";
 
 const router = Router();
 

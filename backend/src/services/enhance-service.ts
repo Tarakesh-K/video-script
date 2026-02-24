@@ -1,7 +1,7 @@
-import { env } from "@/config/env-validator.js";
-import { groq } from "@/config/groq-config.js";
-import { EnhancedPrompt } from "@/types/enhance-types.js";
-import { SYSTEM_PROMPTS } from "@/utils/prompts/prompts.js";
+import { env } from "../config/env-validator.js";
+import { groq } from "../config/groq-config.js";
+import { EnhancedPrompt } from "../types/enhance-types.js";
+import { SYSTEM_PROMPTS } from "../utils/prompts/prompts.js";
 
 export const enhancePromptService = async (data: EnhancedPrompt) => {
   const { initialPrompt, extractedOptions } = data;

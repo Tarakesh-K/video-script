@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { enhancePrompt } from "@/controllers/enhance-controllers.js";
-import { requireKeys } from "@/middleware/validate.js";
+import { enhancePrompt } from "../controllers/enhance-controllers.js";
+import { requireKeys } from "../middleware/validate.js";
 
 const router = Router();
 

@@ -16,9 +16,6 @@
     "sourceMap": true,
 
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
   },
   /* Only include what you actually want to compile */
   "include": ["src/**/*", "api/**/*"],

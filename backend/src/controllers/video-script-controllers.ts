@@ -1,5 +1,5 @@
-import { generateVideoScriptService } from "@/services/video-script-service.js";
-import { VideoScriptRequest } from "@/types/script-types.js";
+import { generateVideoScriptService } from "../services/video-script-service.js";
+import { VideoScriptRequest } from "../types/script-types.js";
 import { Request, Response } from "express";
 
 export const generateVideoScript = async (req: Request, res: Response) => {
