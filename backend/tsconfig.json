@@ -3,21 +3,24 @@
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-
-    "rootDir": "./src",
+    /* Change rootDir to current dir if including folders outside src */
+    "rootDir": "./",
     "outDir": "./dist",
-    
+
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    
+    "forceConsistentCasingInFileNames": true /* Added for Linux/Windows compatibility */,
+
     "types": ["node"],
     "sourceMap": true,
-    
+
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  /* Only include what you actually want to compile */
+  "include": ["src/**/*", "api/**/*"],
+  "exclude": ["node_modules", "**/__tests__/*", "dist"]
 }

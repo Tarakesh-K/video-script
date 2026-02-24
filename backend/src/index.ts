@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import { env } from "@/config/env-validator.js";
 import extractRoutes from "@/routes/extract-routes.js";
 import enhanceRoutes from "@/routes/enhance-routes.js";
 import videoScriptRoutes from "@/routes/video-script-routes.js";
@@ -22,8 +21,17 @@ apiRouter.use("/video-script", videoScriptRoutes);
 // 3. Mount the router (This says: all routes in apiRouter start with /api)
 app.use("/api", apiRouter);
 
-const PORT = env.PORT;
+export default app;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+if (!process.env.VERCEL) {
+  // 2. Use dynamic import to load the validator only when needed
+  import("@/config/env-validator.js").then(({ env }) => {
+    const PORT = env.PORT || 3001;
+    
+    app.listen(PORT, () => {
+      console.log(`🚀 Local Server running on http://localhost:${PORT}`);
+    });
+  }).catch(err => {
+    console.error("Failed to load environment validator:", err);
+  });
+}
