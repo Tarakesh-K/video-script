@@ -26,15 +26,16 @@ SETUP
     The frontend will run on http://localhost:3000.
 
 FOLDER STRUCTURE
-    clip-core/
-    ├── backend/
-    │   ├── src/
-    │   ├── api/    
-    │   ├── dist/
-    │   ├── package.json
-    │   └── .env
-    ├── frontend/
-    │   ├── src/
-    │   ├── public/
-    │   ├── package.json
-    └── README.md
+```text
+clip-core/
+├── backend/
+│   ├── src/
+│   ├── api/
+│   ├── dist/
+│   ├── package.json
+│   └── .env
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+└── README.md
